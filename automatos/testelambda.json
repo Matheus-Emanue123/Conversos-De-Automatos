@@ -1,4 +1,5 @@
 {
+    "descricao": "AFN-λ que aceita a*b*c* (zero ou mais 'a', seguido de zero ou mais 'b', seguido de zero ou mais 'c') - L = {a^i b^j c^k | i,j,k ≥ 0}",
     "alfabeto": ["a", "b","c"],
     "estados": ["q0", "q1", "q2"],
     "estados_iniciais": ["q0"],

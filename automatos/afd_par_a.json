@@ -1,4 +1,5 @@
 {
+    "descricao": "AFD que aceita palavras com número par de 'a' - L = {w ∈ {a,b}* | #a(w) é par}",
     "alfabeto": ["a", "b"],
     "estados": ["par", "impar"],
     "estados_iniciais": ["par"],

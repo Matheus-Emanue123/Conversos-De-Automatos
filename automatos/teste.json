@@ -1,4 +1,5 @@
 {
+    "descricao": "AFD que aceita palavras que terminam com 'ab' - L = {w ∈ {a,b}* | w termina em ab}",
     "alfabeto": ["a", "b"],
     "estados": ["q0", "q1", "q2"],
     "estados_iniciais": ["q0"],

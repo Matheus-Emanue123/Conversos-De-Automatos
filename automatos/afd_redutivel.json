@@ -1,4 +1,5 @@
 {
+  "descricao": "AFD redutível que aceita palavras terminadas em 'ab' (6 estados podem ser reduzidos para 3) - L = {w ∈ {a,b}* | w termina em ab}",
   "alfabeto": ["a", "b"],
   "estados": ["q0", "q1", "q2", "q3", "q4", "q5"],
   "estadoInicial": ["q0"],

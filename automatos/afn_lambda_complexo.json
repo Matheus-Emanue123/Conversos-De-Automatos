@@ -1,4 +1,5 @@
 {
+    "descricao": "AFN-λ que aceita (x | y)z* - palavras começando com 'x' ou 'y' seguidas de zero ou mais 'z' - L = {x z^n | n ≥ 0} ∪ {y z^n | n ≥ 0}",
     "alfabeto": ["x", "y", "z", "&"],
     "estados": ["q0", "q1", "q2", "q3", "q4"],
     "estados_iniciais": ["q0"],

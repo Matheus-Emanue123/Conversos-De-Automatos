@@ -1,4 +1,5 @@
 {
+    "descricao": "AFN com múltiplos estados iniciais - aceita palavras de tamanho ≥ 2 (começando com '1' ou '0') - L = {w ∈ {0,1}* | |w| ≥ 2}",
     "alfabeto": ["0", "1"],
     "estados": ["s0", "s1", "s2", "s3"],
     "estados_iniciais": ["s0", "s1"],

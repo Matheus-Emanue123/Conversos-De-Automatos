@@ -1,4 +1,5 @@
 {
+    "descricao": "AFN que aceita palavras com pelo menos um 'a' seguido de 'b' - L = {w ∈ {a,b}* | w contém ab}",
     "alfabeto": ["a", "b"],
     "estados": ["q0", "q1", "q2", "q3"],
     "estados_iniciais": ["q0"],

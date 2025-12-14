@@ -1,4 +1,5 @@
 {
+    "descricao": "AFD que aceita palavras que começam e terminam com o mesmo símbolo - L = {w ∈ {a,b}* | |w| ≥ 2 e primeiro(w) = último(w)}",
     "alfabeto": ["a", "b"],
     "estados": ["inicio", "comeca_a", "comeca_b", "meio_a", "meio_b", "aceita_a", "aceita_b"],
     "estados_iniciais": ["inicio"],

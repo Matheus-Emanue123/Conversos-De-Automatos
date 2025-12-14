@@ -1,4 +1,5 @@
 {
+    "descricao": "AFD que não aceita nenhuma palavra (linguagem vazia) - L = ∅",
     "alfabeto": ["a", "b"],
     "estados": ["q0", "q1"],
     "estados_iniciais": ["q0"],

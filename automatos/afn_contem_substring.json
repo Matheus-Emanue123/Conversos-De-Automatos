@@ -1,4 +1,5 @@
 {
+    "descricao": "AFN que aceita palavras contendo a substring '101' - L = {w ∈ {0,1}* | w contém 101}",
     "alfabeto": ["0", "1"],
     "estados": ["q0", "q1", "q2", "q3"],
     "estados_iniciais": ["q0"],
