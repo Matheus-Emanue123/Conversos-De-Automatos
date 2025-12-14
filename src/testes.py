@@ -2,8 +2,7 @@ from automato import Automato
 from utils import verificar_nao_determinismo
 
 def testar_palavra_terminal(automato: Automato) -> None:
-    print("\n--- Testar Palavra ---")
-    palavra = input("Digite a palavra a ser testada (deixe vazio para palavra vazia): ")
+    print("\n--- Modo de Teste de Palavras ---")
     
     eh_lambda = '&' in automato.alfabeto
     tem_nao_determinismo = verificar_nao_determinismo(automato)
@@ -15,14 +14,22 @@ def testar_palavra_terminal(automato: Automato) -> None:
     else:
         tipo = "AFD"
     
-    print(f"Testando no {tipo}...")
+    print(f"Tipo do autômato: {tipo}")
+    print("Digite 'SAIR' para voltar ao menu principal\n")
     
-    resultado = automato.aceita_palavra(palavra)
-    
-    if resultado:
-        print(f"✓ A palavra '{palavra}' é ACEITA pelo autômato!")
-    else:
-        print(f"✗ A palavra '{palavra}' é REJEITADA pelo autômato!")
+    while True:
+        palavra = input("Digite a palavra a ser testada (ou SAIR): ")
+        
+        if palavra.upper() == "SAIR":
+            print("Voltando ao menu principal...")
+            break
+        
+            resultado = automato.aceita_palavra(palavra)
+        
+        if resultado:
+            print(f"✓ A palavra '{palavra}' é ACEITA pelo autômato!\n")
+        else:
+            print(f"✗ A palavra '{palavra}' é REJEITADA pelo autômato!\n")
 
 
 def testar_palavras_arquivo(automato: Automato, caminho_arquivo: str) -> None:

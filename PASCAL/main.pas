@@ -145,18 +145,29 @@ end;
 procedure TestarPalavra;
 begin
   WriteLn;
-  WriteLn('--- Testar Palavra ---');
-  Write('Digite a palavra a ser testada (deixe vazio para palavra vazia): ');
-  ReadLn(Palavra);
+  WriteLn('--- Modo de Teste de Palavras ---');
+  WriteLn('Tipo do automato: ', TipoAtual);
+  WriteLn('Digite ''SAIR'' para voltar ao menu principal');
+  WriteLn;
   
-  WriteLn('Testando no ', TipoAtual, '...');
-  
-  Resultado := AceitaPalavra(AutomatoAtual, Palavra);
-  
-  if Resultado then
-    WriteLn('✓ A palavra "', Palavra, '" e ACEITA pelo automato!')
-  else
-    WriteLn('✗ A palavra "', Palavra, '" e REJEITADA pelo automato!');
+  repeat
+    Write('Digite a palavra a ser testada (ou SAIR): ');
+    ReadLn(Palavra);
+    
+    if UpperCase(Palavra) = 'SAIR' then
+    begin
+      WriteLn('Voltando ao menu principal...');
+      Break;
+    end;
+    
+    Resultado := AceitaPalavra(AutomatoAtual, Palavra);
+    
+    if Resultado then
+      WriteLn('✓ A palavra "', Palavra, '" e ACEITA pelo automato!')
+    else
+      WriteLn('✗ A palavra "', Palavra, '" e REJEITADA pelo automato!');
+    WriteLn;
+  until False;
 end;
 
 procedure SalvarAutomato;
