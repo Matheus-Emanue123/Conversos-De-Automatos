@@ -1,0 +1,12 @@
+{
+    "alfabeto": ["a", "b"],
+    "estados": ["par", "impar"],
+    "estados_iniciais": ["par"],
+    "estados_finais": ["par"],
+    "transicoes": [
+        ["par", "impar", "a"],
+        ["par", "par", "b"],
+        ["impar", "par", "a"],
+        ["impar", "impar", "b"]
+    ]
+}

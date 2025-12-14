@@ -1,0 +1,22 @@
+{
+    "alfabeto": ["a", "b"],
+    "estados": ["inicio", "comeca_a", "comeca_b", "meio_a", "meio_b", "aceita_a", "aceita_b"],
+    "estados_iniciais": ["inicio"],
+    "estados_finais": ["aceita_a", "aceita_b"],
+    "transicoes": [
+        ["inicio", "comeca_a", "a"],
+        ["inicio", "comeca_b", "b"],
+        ["comeca_a", "meio_a", "a"],
+        ["comeca_a", "meio_a", "b"],
+        ["comeca_b", "meio_b", "a"],
+        ["comeca_b", "meio_b", "b"],
+        ["meio_a", "meio_a", "b"],
+        ["meio_a", "aceita_a", "a"],
+        ["meio_b", "meio_b", "a"],
+        ["meio_b", "aceita_b", "b"],
+        ["aceita_a", "meio_a", "b"],
+        ["aceita_a", "aceita_a", "a"],
+        ["aceita_b", "meio_b", "a"],
+        ["aceita_b", "aceita_b", "b"]
+    ]
+}
